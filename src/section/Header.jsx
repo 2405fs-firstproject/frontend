@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import { HomeNav } from "../component/HomeNav";
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <HomeNav />
+      Header
+    </div>
+  );
+};
