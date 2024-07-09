@@ -23,7 +23,7 @@ export const HomeNav = () => {
   return (
     <div className="NavUnits">
       <div className="NavUnits-01">
-        <KpassLogo width="84px"></KpassLogo>
+        <KpassLogo width="75px" height="80px"></KpassLogo>
       </div>
       <div className="NavUnits-02">
         <div className="NavUnits-02_Top">

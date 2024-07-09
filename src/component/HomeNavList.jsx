@@ -6,11 +6,9 @@ export const HomeNavList = () => {
     <div className="NavUnits-02_Bottom">
       <div className="Menu-a2">
         <div className="title"> K-패스소개</div>
-        <div className="title">
-          지역별혜택소개
-          <div className="subtitle"> *K패스-경기</div>
-          <div className="subtitle"> *K패스-인천</div>
-        </div>
+        <div className="title">지역별혜택소개</div>
+        <div className="subtitle"> • K패스-경기 </div>
+        <div className="subtitle"> • K패스-인천 </div>
       </div>
       <div className="Menu-a2">
         <div className="title"> 가입조건</div>
@@ -20,10 +18,10 @@ export const HomeNavList = () => {
       <div className="Menu-a2">
         <div className="title"> 카드소개</div>
         <div className="title">사용안내</div>
-        <div className="subtitle"> *카드사별 지급방식</div>
-        <div className="subtitle"> *모바일페이 이용안내</div>
-        <div className="subtitle"> *카드변경방법</div>
-        <div className="subtitle"> *카드사문의안내</div>
+        <div className="subtitle"> • 카드사별 지급방식</div>
+        <div className="subtitle"> • 모바일페이 이용안내</div>
+        <div className="subtitle"> • 카드변경방법</div>
+        <div className="subtitle"> • 카드사문의안내</div>
         <div className="title"> 카드이벤트</div>
       </div>
       <div className="Menu-a2">

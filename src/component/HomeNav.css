@@ -19,7 +19,6 @@
   align-items: center;
 }
 .NavUnits-02_Top {
-  margin-right: 5%;
   display: flex;
   align-items: center;
   height: 80px;
@@ -27,15 +26,13 @@
 }
 
 .NavUnits-02_Bottom {
-  margin-right: 30%;
   display: flex;
 }
 
 .Menu-a {
-  width: 150px;
-  padding-right: 3%;
+  width: 110px;
+  padding-left: 5%;
   line-height: 24px;
-  text-align: left;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
     "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
@@ -45,17 +42,15 @@
 }
 
 .Menu-a2 {
-  width: 150px;
-  padding-right: 3%;
+  width: 140px;
   line-height: 24px;
-  text-align: left;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
     "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   font-size: 15px;
   flex-direction: column;
-  border-right: 2px, solid, #edeff4;
+  border-left: 2px solid #edeff4;
 }
 .NavUnits-03 {
   display: flex;
@@ -85,12 +80,15 @@
 
 .title {
   height: 20px;
-  margin: 30px 2px 0px 2px;
-  font-size: 12px;
+  margin-left: 10%;
+  margin-top: 20%;
+  font-size: 13px;
 }
 
 .subtitle {
+  padding-left: 10%;
   height: 20px;
-  margin: 8px 2px 0px 2px;
-  font-size: 9px;
+  margin-top: 10%;
+  font-size: 11px;
+  color: #80828b;
 }
