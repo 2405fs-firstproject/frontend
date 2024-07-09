@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className="footer_container">
       <div className="footer_container_Logo">
-        <KpassLogo width="75px" height="80px"></KpassLogo>
+        <KpassLogo width="85px" height="80px"></KpassLogo>
       </div>
       <div className="footer_container_Navbar">
         <div className="footer_container_Navbar_link">
