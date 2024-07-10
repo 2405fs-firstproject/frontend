@@ -22,3 +22,21 @@
   margin-left: 16%;
   width: 68%;
 }
+.Sub_Letter_rev {
+  font-size: 115%;
+  font-weight: 400;
+  color: #707a83;
+  padding-bottom: 2%;
+}
+.Main_Letter {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 700;
+  font-size: 115%;
+}
+
+.Sub_Letter {
+  font-size: 115%;
+  font-weight: 400;
+  color: #707a83;
+}
