@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.Policy_pages {
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  line-height: 24px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+}
+
+.Policy_pages h1 {
+  font-size: 250%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid black;
+}
+
+.Policy_des {
+  margin-left: 16%;
+  width: 68%;
+}
+.Sub_Letter_rev {
+  font-size: 115%;
+  font-weight: 400;
+  color: #707a83;
+  padding-bottom: 2%;
+}
+.Main_Letter {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 700;
+  font-size: 115%;
+}
+
+.Sub_Letter {
+  font-size: 115%;
+  font-weight: 400;
+  color: #707a83;
+}

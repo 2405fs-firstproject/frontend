@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.Navbar_menu {
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 0.1em solid #edeff4;
+  margin: 0px;
+}
+.Navbar-01 {
+  margin-right: 5%;
+}
+.Navbar-02 {
+  margin-right: 19%;
+}
+
+.Navbarbtn {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+.BtnBox-a {
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  line-height: 24px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-weight: 700;
+}
+
+.BtnBox:hover {
+  cursor: pointer;
+}
+
+.BtnBox:active {
+  color: #fc5b00;
+}
+
+.Navbar-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-size: 0.9em;
+}
+.Navbar-03 a {
+  color: inherit; /* 텍스트 색상을 부모 요소의 색상과 동일하게 설정 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.Navbar-03 a:hover,
+a:focus,
+a:active {
+  color: inherit; /* 호버, 포커스, 액티브 상태에서도 색상 변경 없음 */
+  text-decoration: none; /* 호버, 포커스, 액티브 상태에서도 밑줄 제거 */
+}
+
+.clickbox::after {
+  content: "|";
+  color: #edeff4;
+  margin: 0.6em;
+}
+
+.clickbox:last-child:after {
+  display: none;
+}
+
+.BtnBox-des {
+  padding: 5px;
+}
