@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import questionImage from "./question.png";
 import phoneImage from "./phone.png";
 
-const ContactMain = ({ infosave = [] }) => {
+export const ContactMain = ({ infosave = [] }) => {
   const navigate = useNavigate();
   const [selectedType, setSelectedType] = useState("적립");
   const [isOpen, setIsOpen] = useState(false);
@@ -97,5 +97,3 @@ const ContactMain = ({ infosave = [] }) => {
     </>
   );
 };
-
-export default ContactMain;
