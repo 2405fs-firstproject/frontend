@@ -35,37 +35,37 @@ export const Navbar_home = () => {
       <div className="Navbar_menu">
         <div className="Navbar-01">
           <Link to="/">
-            <KpassLogo width="4.5vw" height="4.3vw" />
+            <KpassLogo width="84px" height="80px" />
           </Link>
         </div>
         <div className="Navbar-02">
           <div className="BtnBox" onClick={handleBtnClick}>
             <div className="BtnBox-icon">
-              <Kpass width="25px" height="25px"></Kpass>
+              <Kpass width="20px" height="20px"></Kpass>
             </div>
             <div className="BtnBox-des">사업소개</div>
           </div>
           <div className="BtnBox" onClick={handleBtnClick}>
             <div className="BtnBox-icon">
-              <Board width="25px" height="25px" />
+              <Board width="20px" height="20px" />
             </div>
             <div className="BtnBox-des">이용안내</div>
           </div>
           <div className="BtnBox" onClick={handleBtnClick}>
             <div className="BtnBox-icon">
-              <Card width="25px" height="25px" />
+              <Card width="20px" height="20px" />
             </div>
             <div className="BtnBox-des">K-패스 카드</div>
           </div>
           <div className="BtnBox" onClick={handleBtnClick}>
             <div className="BtnBox-icon">
-              <Bell width="25px" height="25px" />
+              <Bell width="23px" height="28px" />
             </div>
             <div className="BtnBox-des">공지사항</div>
           </div>
           <div className="BtnBox" onClick={handleBtnClick}>
             <div className="BtnBox-icon">
-              <Question width="25px" height="25px" />
+              <Question width="20px" height="25px" />
             </div>
             <div className="BtnBox-des">문의하기</div>
           </div>
