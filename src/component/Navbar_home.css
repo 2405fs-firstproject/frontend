@@ -6,12 +6,13 @@
   align-items: center;
   display: flex;
   border-bottom: 0.1em solid #edeff4;
+  margin: 0px;
 }
-
+.Navbar-01 {
+  margin-right: 5%;
+}
 .Navbar-02 {
-  min-width: 5.2em;
-  width: 65vw;
-  margin-left: 5vw;
+  margin-right: 18%;
 }
 
 .Navbarbtn {
@@ -77,19 +78,60 @@ a:active {
 }
 
 .Navbar_list {
+  margin: auto;
+  background-color: white;
+  border-bottom: 0.1em solid #edeff4;
+}
+.ListLine_container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 65vw;
-  margin: auto;
-  background-color: yellow;
+  align-items: start;
+  margin-right: 13%;
 }
-
 .ListLine {
-  padding: 60px;
-  background-color: red;
+  width: 11%;
+  height: 355px;
+  border-right: 0.1em solid #edeff4;
+  border-left: 0.1em solid #edeff4;
+  position: relative;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+}
+.ListLine_group {
+  padding-top: 10%;
 }
 
-.ListLine_group {
-  display: flex;
+.ListLine_group_menu {
+  margin-bottom: 5%;
+}
+
+.MainIndex {
+  padding: 10% 6% 10% 10%;
+  line-height: 24px;
+  font-size: 1em;
+  font-weight: 600;
+}
+.MainIndex:hover {
+  background-color: #ffeee5;
+  cursor: pointer;
+}
+.SubIndex {
+  padding: 5% 3% 3% 10%;
+  line-height: 24px;
+  font-size: 0.9em;
+  color: gray;
+  font-weight: 500;
+}
+
+.ListLine a {
+  color: inherit; /* 텍스트 색상을 부모 요소의 색상과 동일하게 설정 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.ListLine a:hover,
+a:focus,
+a:active {
+  color: inherit; /* 호버, 포커스, 액티브 상태에서도 색상 변경 없음 */
+  text-decoration: none; /* 호버, 포커스, 액티브 상태에서도 밑줄 제거 */
 }

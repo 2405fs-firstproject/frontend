@@ -14,7 +14,7 @@ export const Navbar_home = () => {
       <div className="Navbar_menu">
         <div className="Navbar-01">
           <Link to="/">
-            <KpassLogo width="80px" height="80px" />
+            <KpassLogo width="87px" height="80px" />
           </Link>
         </div>
         <div className="Navbar-02">
@@ -61,42 +61,111 @@ export const Navbar_home = () => {
         </div>
       </div>
       <div className="Navbar_list">
-        <div className="ListLine">
-          <div className="ListLine_group">
-            <Link to="/KpassIntro">K-패스소개</Link>
-            <Link to="/">지역별혜택소개</Link>
-            <Link to="/">K패스-경기</Link>
-            <Link to="/">K패스-인천</Link>
+        <div className="ListLine_container">
+          <div className="ListLine">
+            <div className="ListLine_group">
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/KpassIntro">K-패스소개</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">지역별혜택소개</Link>
+                </div>
+                <div className="SubIndex">
+                  <Link to="/">• K패스-경기</Link>
+                </div>
+                <div className="SubIndex">
+                  <Link to="/">• K패스-인천</Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="ListLine">
-          <div className="ListLine_group">
-            <Link to="/">가입조건</Link>
-            <Link to="/">적립금액안내</Link>
-            <Link to="/">지급안내</Link>
+          <div className="ListLine">
+            <div className="ListLine_group">
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">가입조건</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">적립금액안내</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">지급안내</Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="ListLine">
-          <div className="ListLine_group">
-            <Link to="/">카드소개</Link>
-            <Link to="/">사용안내</Link>
-            <Link to="/">카드사별 지급방식</Link>
-            <Link to="/">모바일페이 이용안내</Link>
-            <Link to="/">카드변경방법</Link>
-            <Link to="/">카드사문의안내</Link>
+          <div className="ListLine">
+            <div className="ListLine_group">
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">카드소개</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">사용안내</Link>
+                </div>
+                <div className="ListLine_group_menuSub">
+                  <div className="SubIndex">
+                    <Link to="/">• 카드사별 지급방식</Link>
+                  </div>
+                  <div className="SubIndex">
+                    <Link to="/">• 모바일페이 이용안내</Link>
+                  </div>
+                  <div className="SubIndex">
+                    <Link to="/">• 카드변경방법</Link>
+                  </div>
+                  <div className="SubIndex">
+                    <Link to="/">• 카드사문의안내</Link>
+                  </div>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">카드이벤트</Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="ListLine">
-          <div className="ListLine_group">
-            <Link to="/">공지사항</Link>
+          <div className="ListLine">
+            <div className="ListLine_group">
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">공지사항</Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="ListLine">
-          <div className="ListLine_group">
-            <Link to="/">문의하기</Link>
-            <Link to="/">1:1문의</Link>
-            <Link to="/">문의내역</Link>
-            <Link to="/">자주묻는질문</Link>
+          <div className="ListLine">
+            <div className="ListLine_group">
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">문의하기</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">1:1문의</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">문의내역</Link>
+                </div>
+              </div>
+              <div className="ListLine_group_menu">
+                <div className="MainIndex">
+                  <Link to="/">자주묻는질문</Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
