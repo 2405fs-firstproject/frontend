@@ -1,0 +1,12 @@
+.card-details {
+  padding: 20px;
+}
+
+.card-details h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.card-details p {
+  font-size: 1.2em;
+}
