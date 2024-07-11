@@ -13,8 +13,6 @@ import ContactMain from "./pages/contact/ContactMain";
 import CounselForm from "./pages/contact/CounselForm";
 import Info from "./pages/Info/Info";
 import "./App.css";
-import Home2_1 from "./pages/main2/Home2_1";
-import Card_sub from "./pages/main2/Card_sub";
 
 function App() {
   return (
@@ -34,7 +32,6 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/joinus" element={<JoinUs />} />
               <Route path="/info" element={<Info />} />
-              <Route path="/k-pass-card" element={<Card_sub />} />
             </Routes>
           </div>
           <Footer />

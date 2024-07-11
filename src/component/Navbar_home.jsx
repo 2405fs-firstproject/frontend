@@ -70,7 +70,9 @@ export const Navbar_home = () => {
             <div className="BtnBox" onClick={handleBtnClick}>
               <div className="BtnBox-a">
                 <Question width="25px" height="25px" />
-                <div className="BtnBox-des">문의하기</div>
+                <div className="BtnBox-des">
+                  문의하기
+                </div>
               </div>
             </div>
           </div>
