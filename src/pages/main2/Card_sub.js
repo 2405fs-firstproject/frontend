@@ -3,7 +3,7 @@ import "./Card_sub.css"; // Make sure to create this CSS file and add the styles
 
 const K_Pass_Card = () => {
   return (
-    <div>
+    <div className="card_sub_all">
       <section className="headers">
         <div className="header_sub">
           <a href="/">
@@ -24,7 +24,14 @@ const K_Pass_Card = () => {
       </section>
       <section className="card_sub">
         <section className="card_sub_1">
-          <h3>적립금을 지급하는 기준</h3>
+          <div className="gift_div">
+            <h3>적립금을 지급하는 기준</h3>
+            <img
+              className="gift"
+              src="https://korea-pass.kr/assets/images/common/gift_blue.webp?ver=240220"
+              alt="gift"
+            />
+          </div>
           <ul>
             <li>
               월 15회 이상 이용 시 최대 60회까지 적립금액이 높은 순으로 지급
@@ -39,16 +46,29 @@ const K_Pass_Card = () => {
             </ul>
           </div>
         </section>
-        <img
-          className="present"
-          src="https://korea-pass.kr/assets/images/common/gift_blue.webp?ver=240220"
-        />
+
         <section className="card_sub_2">
-          <h3>지급금액을 카드사로 보내는 기간</h3>
+          <div className="gold_div">
+            <h3>지급금액을 카드사로 보내는 기간</h3>
+            <img
+              className="gold"
+              src="https://korea-pass.kr/assets/images/common/gold.webp?ver=240220"
+              alt="gold"
+            />
+          </div>
           <p>적립 월의 익월 5영업일 카드사로 지급 요청됩니다.</p>
         </section>
+
         <section className="card_sub_3">
-          <h3>7-9영업일 이내 지급하는 카드사</h3>
+          <div className="calendar_div">
+            <h3>카드사별 지급일과 지급방식</h3>
+            <img
+              className="calendar"
+              src="https://korea-pass.kr/assets/images/common/calendar.webp?ver=240220"
+              alt="calendar"
+            />
+          </div>
+          <h4>7-9영업일 이내 지급하는 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
@@ -110,7 +130,7 @@ const K_Pass_Card = () => {
               </div>
             </div>
           </div>
-          <h3>정해진 날짜에 지급하는 카드사</h3>
+          <h4>정해진 날짜에 지급하는 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
@@ -195,7 +215,7 @@ const K_Pass_Card = () => {
               </div>
             </div>
           </div>
-          <h3>내 결제일이 실제 지급일인 카드사</h3>
+          <h4>내 결제일이 실제 지급일인 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
