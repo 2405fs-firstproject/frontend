@@ -1,36 +1,33 @@
 .img {
   width: 750px;
-  height: 550px;
+  height: autopx;
 }
 
 .slide__wrap {
   width: 750px;
-  height: 550px;
+  height: auto;
   overflow: hidden;
   margin-bottom: 50px;
-
-  padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
-  padding-right: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
 }
 
 .slide__img {
   position: relative;
   width: 750px;
-  height: 550px;
+  height: auto;
   overflow: hidden;
 }
 
 .slide__inner {
   display: flex;
   width: 3000px;
-  height: 550px;
+  height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
 .slide {
   position: relative;
   width: 750px;
-  height: 550px;
+  height: auto;
 }
 
 .slide__btn a {
