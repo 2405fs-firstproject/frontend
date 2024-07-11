@@ -1,0 +1,29 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.Popup_baner {
+  position: fixed;
+}
+
+.Popup_event {
+  position: relative;
+  background-color: #002147;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
+  padding-left: 350px;
+}
+
+.Popup_dis {
+  color: white;
+}
+
+.Popup_closebtn button {
+  width: 27px;
+  height: 20px;
+}

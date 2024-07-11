@@ -9,11 +9,12 @@
 }
 .Navbar-01 {
   box-sizing: border-box;
+  padding-right: 4px;
 }
 .Navbar-02 {
   box-sizing: border-box;
-  width: 916px;
-  height: 80px;
+  width: 946px;
+  height: 70px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -22,6 +23,7 @@
     "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   padding-left: 80px;
+  margin-right: 20px;
 }
 .Navbar-03 {
   box-sizing: border-box;
@@ -33,7 +35,7 @@
     "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   font-size: 14px;
-  margin-left: 70px;
+  margin-right: 40px;
 }
 
 .BtnBox {
@@ -41,8 +43,9 @@
   align-items: center;
   display: flex;
   width: 128px;
-  height: 80px;
-  padding-left: 14px;
+  height: 60px;
+  padding-left: 10px;
+  margin-right: 5px;
 }
 .BtnBox-icon {
   justify-content: center;
