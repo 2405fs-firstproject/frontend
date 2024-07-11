@@ -2,6 +2,7 @@ import React from "react";
 import SlideShow from "../pages/Main01/SlideShow";
 import { Link } from "react-router-dom";
 import "../pages/Main01/Main.css";
+import Home2_1 from "../pages/main2/Home2_1";
 
 function Home() {
   return (
@@ -34,6 +35,7 @@ function Home() {
           />
         </div>
       </div>
+      <Home2_1 />
     </main>
   );
 }
