@@ -3,7 +3,7 @@ import "./Card_sub.css"; // Make sure to create this CSS file and add the styles
 
 const K_Pass_Card = () => {
   return (
-    <div>
+    <div className="card_sub_all">
       <section className="headers">
         <div className="header_sub">
           <a href="/">
@@ -24,7 +24,14 @@ const K_Pass_Card = () => {
       </section>
       <section className="card_sub">
         <section className="card_sub_1">
-          <h3>적립금을 지급하는 기준</h3>
+          <div className="gift_div">
+            <h3>적립금을 지급하는 기준</h3>
+            <img
+              className="gift"
+              src="https://korea-pass.kr/assets/images/common/gift_blue.webp?ver=240220"
+              alt="gift"
+            />
+          </div>
           <ul>
             <li>
               월 15회 이상 이용 시 최대 60회까지 적립금액이 높은 순으로 지급
@@ -39,16 +46,29 @@ const K_Pass_Card = () => {
             </ul>
           </div>
         </section>
-        <img
-          className="present"
-          src="https://korea-pass.kr/assets/images/common/gift_blue.webp?ver=240220"
-        />
+
         <section className="card_sub_2">
-          <h3>지급금액을 카드사로 보내는 기간</h3>
+          <div className="gold_div">
+            <h3>지급금액을 카드사로 보내는 기간</h3>
+            <img
+              className="gold"
+              src="https://korea-pass.kr/assets/images/common/gold.webp?ver=240220"
+              alt="gold"
+            />
+          </div>
           <p>적립 월의 익월 5영업일 카드사로 지급 요청됩니다.</p>
         </section>
+
         <section className="card_sub_3">
-          <h3>7-9영업일 이내 지급하는 카드사</h3>
+          <div className="calendar_div">
+            <h3>카드사별 지급일과 지급방식</h3>
+            <img
+              className="calendar"
+              src="https://korea-pass.kr/assets/images/common/calendar.webp?ver=240220"
+              alt="calendar"
+            />
+          </div>
+          <h4>7-9영업일 이내 지급하는 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
@@ -59,7 +79,7 @@ const K_Pass_Card = () => {
                 <h4>신한카드</h4>
                 <p>
                   7영업일 이후 (신용) 결제대금에서 차감, 결제대금이 없는 경우
-                  계좌로 입금 (체크카드 입금됩니다.)
+                  계좌로 입금 (체크)계좌로 입금됩니다.
                 </p>
               </div>
             </div>
@@ -110,7 +130,7 @@ const K_Pass_Card = () => {
               </div>
             </div>
           </div>
-          <h3>정해진 날짜에 지급하는 카드사</h3>
+          <h4>정해진 날짜에 지급하는 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
@@ -166,8 +186,8 @@ const K_Pass_Card = () => {
               <div>
                 <h4>이즐(실물카드)</h4>
                 <p>
-                  적립 월의 익월 20-27일 오전 10시까지 이즐충전소 앱의
-                  선물함으로 지급됩니다.
+                  적립 월의 익월 20-27일 오전 10시까지 이즐충전소 앱의 선물로
+                  지급됩니다.
                 </p>
               </div>
             </div>
@@ -195,7 +215,7 @@ const K_Pass_Card = () => {
               </div>
             </div>
           </div>
-          <h3>내 결제일이 실제 지급일인 카드사</h3>
+          <h4>내 결제일이 실제 지급일인 카드사</h4>
           <div className="card_list">
             <div className="card_item">
               <img
@@ -244,7 +264,7 @@ const K_Pass_Card = () => {
               <div>
                 <h4>현대카드</h4>
                 <p>
-                  한금금은 결제일에 차감되며, 남은 K-패스 한금금이 있다면 연결된
+                  환급금은 결제일에 차감되며, 남은 K-패스 환급금이 있다면 연결된
                   계좌로 결제일 다음 날 입금됩니다.
                 </p>
               </div>
@@ -267,7 +287,7 @@ const K_Pass_Card = () => {
             <h4>이용안내</h4>
             <p>
               신용공여기간이란? 고객이 카드로 물건을 사거나, 현금서비스를 받을
-              날로부터 대금을 결제하기까지 돈을 갚는 날까지의 기간입니다.
+              날로부터 대금을 결제하거나 돈을 갚는 날까지의 기간입니다.
             </p>
             <p>
               하나카드의 경우 신용공여기간에 따라 마일리지 지급일이 다음다음
