@@ -92,12 +92,12 @@ export const Navbar_Modal = () => {
           <div className="ListLine_group">
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/">문의하기</Link>
+                <Link to="/ContactForm">문의하기</Link>
               </div>
             </div>
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/">1:1문의</Link>
+                <Link to="/Counsel">1:1문의</Link>
               </div>
             </div>
             <div className="ListLine_group_menu">

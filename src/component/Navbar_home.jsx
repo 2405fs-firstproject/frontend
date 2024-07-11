@@ -17,7 +17,10 @@ export const Navbar_home = () => {
     setShowModal(true); // 버튼 클릭 시 모달의 상태를 토글
   };
   const handleOutsideClick = (event) => {
-    if (event.target.closest(".BtnBox") === null && event.target.closest(".Navbar_Modal") === null) {
+    if (
+      event.target.closest(".BtnBox") === null &&
+      event.target.closest(".Navbar_Modal") === null
+    ) {
       setShowModal(false); // BtnBox나 Navbar_Modal 외부를 클릭하면 showModal을 false로 설정
     }
   };
@@ -67,7 +70,9 @@ export const Navbar_home = () => {
             <div className="BtnBox" onClick={handleBtnClick}>
               <div className="BtnBox-a">
                 <Question width="25px" height="25px" />
-                <div className="BtnBox-des">문의하기</div>
+                <div className="BtnBox-des">
+                  문의하기
+                </div>
               </div>
             </div>
           </div>
@@ -81,7 +86,9 @@ export const Navbar_home = () => {
           </div>
         </div>
       </div>
-      {showModal && <Navbar_Modal showModal={showModal} setShowModal={setShowModal} />}
+      {showModal && (
+        <Navbar_Modal showModal={showModal} setShowModal={setShowModal} />
+      )}
     </div>
   );
 };
