@@ -8,6 +8,79 @@ function Home() {
     <main>
       <div id="main01">
         <SlideShow />
+
+        <div className="login-box">
+          <header className="login_title">
+            <span className="login-title-text">
+              혜택이 두루두루<br></br>행복이 차곡차곡<br></br>K-패스
+            </span>
+            <img
+              className="login_img"
+              src="https://korea-pass.kr/assets/images/main/main_01_02.svg"
+              alt=""
+            />
+          </header>
+          <form id="loginForm">
+            <input type="hidden" id="result" name="result" value></input>
+            <input type="hidden" id="socialFlag" name="socialCd"></input>
+            <input type="hidden" id="socialId" name="socialId"></input>
+            <input type="hidden" id="alUserId" name="alUserId"></input>
+            <input type="hidden" id="userEmail" name="userEmail"></input>
+            <label className="user_id">아이디</label>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                id="user_id"
+                placeholder="아이디를 입력해주세요."
+                aria-invalid="false"
+                aria-errormessage="id-error-msg"
+                required
+              ></input>
+            </div>
+            <label className="user_pwd">비밀번호</label>
+            <div className="input-wrapper">
+              <input
+                type="password"
+                id="user_pwd"
+                placeholder="비밀번호를 입력해주세요."
+                aria-invalid="false"
+                aria-errormessage="password-error-msg"
+                required
+              ></input>
+            </div>
+
+            <button type="submit" className="btnLogin">
+              로그인
+            </button>
+
+            <nav>
+              <div className="login-util">
+                <div className="login-find">
+                  <span className="find-id">아이디 찾기</span>
+                  <span className="bar">|</span>
+                  <span className="find-pwd">비밀번호 찾기</span>
+                </div>
+                <div className="login-signup">회원가입</div>
+              </div>
+              <div className="login-others">
+                <a href="#" id="naver_id_login_hidden">
+                  <img
+                    className="login_naver"
+                    src="https://korea-pass.kr/assets/images/ico/naver.svg?ver=240220"
+                    alt=""
+                  />
+                </a>
+                <a href="#" id="kakao_id_login_hidden">
+                  <img
+                    className="login_kakao"
+                    src="https://korea-pass.kr/assets/images/ico/kakao.svg?ver=240220"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </nav>
+          </form>
+        </div>
       </div>
       <div id="main02">
         <div>
