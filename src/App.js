@@ -1,18 +1,20 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./section/Header";
-import { Home } from "./section/Home";
+import Home from "./section/Home";
 import { Footer } from "./section/Footer";
 import { Email } from "./pages/Policy/Email";
 import { Private } from "./pages/Policy/Private";
 import { Service } from "./pages/Policy/Service";
 import { Login } from "./pages/Login";
 import { JoinUs } from "./pages/JoinUs";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Info from "./pages/Info/Info";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <div className="Wrapper">
           <Header />
           <div className="contentWrapper">
@@ -23,11 +25,12 @@ function App() {
               <Route path="/service" element={<Service />} />
               <Route path="/login" element={<Login />} />
               <Route path="/joinus" element={<JoinUs />} />
+              <Route path="/info" element={<Info />} />
             </Routes>
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
