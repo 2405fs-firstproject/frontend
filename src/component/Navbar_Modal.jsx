@@ -97,7 +97,7 @@ export const Navbar_Modal = () => {
             </div>
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/">1:1문의</Link>
+                <Link to="/Counsel">1:1문의</Link>
               </div>
             </div>
             <div className="ListLine_group_menu">

@@ -1,7 +1,6 @@
-import React from "react";
 import "./Counsel.css";
 
-export const CounselForm = () => {
+const CounselForm = () => {
   return (
     <>
       <div className="main"> 1:1 문의하기 </div>
@@ -82,3 +81,5 @@ export const CounselForm = () => {
     </>
   );
 };
+
+export default CounselForm;

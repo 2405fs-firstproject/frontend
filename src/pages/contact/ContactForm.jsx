@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CounselForm } from "./CounselForm";
-import { ContactMain } from "./ContactMain";
+import ContactMain from "./ContactMain";
+import CounselForm from "./CounselForm";
 
-export const ContactForm = () => {
-  const [infosave] = useState([
+function ContactForm() {
+  const [infosave, setInfosave] = useState([
     {
       id: "e1",
       type: "적립",
@@ -71,12 +71,25 @@ export const ContactForm = () => {
         "K-패스는 당월 적립금액을 익월 5영업일에 정산하여 카드사에 지급요청하게됩니다",
     },
   ]);
+
+  const getContactMain = (data) => {
+    setInfosave([
+      ...infosave,
+      {
+        id: Math.random().toString(),
+        title: data.name,
+        type: data.type,
+        content: data.content,
+      },
+    ]);
+  };
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<ContactMain infosave={infosave} />} />
-        <Route path="./counselForm" element={<CounselForm />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<ContactMain infosave={infosave} />} />
+      <Route path="/counsel" element={<CounselForm />} />
+    </Routes>
   );
-};
+}
+
+export default ContactForm;

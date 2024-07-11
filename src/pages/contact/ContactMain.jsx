@@ -1,3 +1,4 @@
+// ContactMain.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ContactMain.css";
@@ -5,7 +6,7 @@ import Modal from "react-modal";
 import questionImage from "./question.png";
 import phoneImage from "./phone.png";
 
-export const ContactMain = ({ infosave = [] }) => {
+const ContactMain = ({ infosave = [] }) => {
   const navigate = useNavigate();
   const [selectedType, setSelectedType] = useState("적립");
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ export const ContactMain = ({ infosave = [] }) => {
       <div className="Counsel-btn">
         <button className="btn1" onClick={goToCounsel}>
           1:1 문의하기
-          <img src={questionImage} alt="" className="btn-icon1" />
+          <img src={questionImage} className="btn-icon1" />
         </button>
         <button className="btn2" onClick={openModal}>
           <span className="btn2-content">
@@ -39,7 +40,7 @@ export const ContactMain = ({ infosave = [] }) => {
               평일 9시 ~ 18시 / 휴게시간 12시 ~ 13시
             </span>
           </span>
-          <img src={phoneImage} alt="" className="btn-icon2" />
+          <img src={phoneImage} className="btn-icon2" />
         </button>
         <Modal
           className="phone-info"
@@ -97,3 +98,5 @@ export const ContactMain = ({ infosave = [] }) => {
     </>
   );
 };
+
+export default ContactMain;
