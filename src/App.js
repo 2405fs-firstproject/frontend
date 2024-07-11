@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./section/Header";
-import { Home } from "./section/Home";
+import Home from "./section/Home";
 import { Footer } from "./section/Footer";
 import { Email } from "./pages/Policy/Email";
 import { Private } from "./pages/Policy/Private";
 import { Service } from "./pages/Policy/Service";
 import { Login } from "./pages/Login";
 import { JoinUs } from "./pages/JoinUs";
-import ContactForm from "./pages/contact/ContactForm"; // 기본 내보내기로 가져오기
+import ContactForm from "./pages/contact/ContactForm";
 import ContactMain from "./pages/contact/ContactMain";
 import CounselForm from "./pages/contact/CounselForm";
+import Info from "./pages/Info/Info";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Route path="/counsel" element={<CounselForm />} />
               <Route path="/login" element={<Login />} />
               <Route path="/joinus" element={<JoinUs />} />
+              <Route path="/info" element={<Info />} />
             </Routes>
           </div>
           <Footer />
