@@ -55,7 +55,7 @@ export const Navbar_Modal = () => {
             </div>
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/">사용안내</Link>
+                <Link to="/k-pass-card">사용안내</Link>
               </div>
               <div className="ListLine_group_menuSub">
                 <div className="SubIndex">

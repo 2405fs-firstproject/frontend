@@ -9,7 +9,7 @@ function Home() {
     <main>
       <div id="main01">
         <SlideShow />
-
+        <div />
         <div className="login-box">
           <header className="login_title">
             <span className="login-title-text">
