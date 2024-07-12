@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 40px 0;
+  margin-left: 30px;
+  margin-bottom: 70px;
+  border-bottom: 2px solid #666;
+  padding-bottom: 30px;
+}
+
+.contact-type-select {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-type {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.terms-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.terms {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.agree-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.agree-box input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.information-input {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.inforamtion-input.name,
+.inforamtion-input.phone,
+.inforamtion-input.password,
+.title,
+.content {
+  margin-top: 10px;
+}
+
+.inforamtion-input.memo {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  font-size: 22px;
+  font-weight: bold;
+}
+.styled-textarea {
+  height: 15rem;
+  white-space: pre;
+}
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-button {
+  margin-bottom: 15%;
+  background-color: #ff6600;
+  width: 101%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.line {
+  border-bottom: 1px solid #ccc;
+  width: 101%;
+  margin: 20px 0px;
+}
+
+.register-button:hover {
+  background-color: #e65c00;
+}

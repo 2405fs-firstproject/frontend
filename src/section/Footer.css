@@ -1,0 +1,52 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  border-top: 1px solid #969696;
+}
+.footer_container_Logo {
+  margin-right: 48%;
+}
+
+.footer_container_Navbar {
+  line-height: 24px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+
+  color: gray;
+}
+.footer_container_Navbar_link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer_container_Navbar_link a {
+  font-size: 13px;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.footer_container_Navbar_link a {
+  color: inherit; /* 텍스트 색상을 부모 요소의 색상과 동일하게 설정 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.footer_container_Navbar_link a:hover,
+a:focus,
+a:active {
+  color: inherit; /* 호버, 포커스, 액티브 상태에서도 색상 변경 없음 */
+  text-decoration: none; /* 호버, 포커스, 액티브 상태에서도 밑줄 제거 */
+}
+
+.footer_container_Navbar_des {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+}
