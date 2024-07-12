@@ -8,6 +8,7 @@ import { Service } from "./pages/Policy/Service";
 import ContactForm from "./pages/contact/ContactForm";
 import ContactMain from "./pages/contact/ContactMain";
 import CounselForm from "./pages/contact/CounselForm";
+import NoticeForm from "./pages/Notice/NoticeForm";
 import Info from "./pages/Info/Info";
 import "./App.css";
 import Card_sub from "./pages/main2/Card_sub";
@@ -30,6 +31,7 @@ function App() {
               <Route path="/contactform" element={<ContactForm />} />
               <Route path="/contactmain" element={<ContactMain />} />
               <Route path="/counsel" element={<CounselForm />} />
+              <Route path="/notice" element={<NoticeForm />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/info" element={<Info />} />
