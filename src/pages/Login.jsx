@@ -73,17 +73,9 @@ export const Login = () => {
         <div className="contentWrap">
           <div className="inputTitle">아이디</div>
           <div className="inputWrapper">
-            <input
-              type="text"
-              className="input"
-              placeholder="아이디를 입력해주세요."
-              value={id}
-              onChange={handleId}
-            />
+            <input type="text" className="input" placeholder="아이디를 입력해주세요." value={id} onChange={handleId} />
           </div>
-          <div className="errorMessageWrap">
-            {!idValid && id.length > 0 && <div>아이디를 입력해주세요.</div>}
-          </div>
+          <div className="errorMessageWrap">{!idValid && id.length > 0 && <div>아이디를 입력해주세요.</div>}</div>
 
           <div style={{ marginTop: "26px" }} className="inputTitle">
             비밀번호
@@ -98,9 +90,7 @@ export const Login = () => {
             />
           </div>
           <div className="errorMessageWrap">
-            {!passwordValid && password.length > 0 && (
-              <div>비밀번호를 입력해주세요.</div>
-            )}
+            {!passwordValid && password.length > 0 && <div>비밀번호를 입력해주세요.</div>}
           </div>
         </div>
         <div>

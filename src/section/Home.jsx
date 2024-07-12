@@ -22,11 +22,7 @@ export const Home = () => {
             <span className="login-title-text">
               혜택이 두루두루<br></br>행복이 차곡차곡<br></br>K-패스
             </span>
-            <img
-              className="login_img"
-              src="https://korea-pass.kr/assets/images/main/main_01_02.svg"
-              alt=""
-            />
+            <img className="login_img" src="https://korea-pass.kr/assets/images/main/main_01_02.svg" alt="" />
           </header>
           <form id="loginForm">
             <input type="hidden" id="result" name="result" value></input>
@@ -68,7 +64,9 @@ export const Home = () => {
                   <span className="bar">|</span>
                   <span className="find-pwd">비밀번호 찾기</span>
                 </div>
-                <div className="login-signup" onClick={handleLogin}>회원가입</div>
+                <div className="login-signup" onClick={handleLogin}>
+                  회원가입
+                </div>
               </div>
               <div className="login-others">
                 <a href="{()=>false}" id="naver_id_login_hidden">
@@ -95,9 +93,7 @@ export const Home = () => {
           <div className="text1_1">19세 이상 국민이면 누구나 이용 가능한</div>
           <div className="text1_2">교통비 할인카드를 소개합니다.</div>
           <div className="text2_1">오늘도 대중교통을 이용하고 계신 여러분,</div>
-          <div className="text2_2">
-            대중교통 이용 시마다 할인 받는 K-패스 알고 계신가요?
-          </div>
+          <div className="text2_2">대중교통 이용 시마다 할인 받는 K-패스 알고 계신가요?</div>
           <Link to="/info" className="info_report">
             <span className="report">전체보기</span>
             <img
@@ -108,15 +104,10 @@ export const Home = () => {
           </Link>
         </div>
         <div className="kpass_img_wrapper">
-          <img
-            className="kpass_img"
-            src="https://korea-pass.kr/assets/images/main/main_02.webp"
-            alt=""
-          />
+          <img className="kpass_img" src="https://korea-pass.kr/assets/images/main/main_02.webp" alt="" />
         </div>
       </div>
       <Home2_1 />
     </main>
   );
-}
-
+};

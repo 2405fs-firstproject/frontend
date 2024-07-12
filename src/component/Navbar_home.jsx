@@ -38,41 +38,39 @@ export const Navbar_home = () => {
       <div className="Navbar_menu">
         <div className="Navbar-01">
           <Link to="/">
-            <KpassLogo width="87px" height="80px" />
+            <KpassLogo width="84px" height="80px" />
           </Link>
         </div>
         <div className="Navbar-02">
-          <div className="Navbarbtn" on>
-            <div className="BtnBox" onClick={handleBtnClick}>
-              <div className="BtnBox-a">
-                <Kpass width="25px" height="25px"></Kpass>
-                <div className="BtnBox-des">사업소개</div>
-              </div>
+          <div className="BtnBox" onClick={handleBtnClick}>
+            <div className="BtnBox-icon">
+              <Kpass width="20px" height="20px"></Kpass>
             </div>
-            <div className="BtnBox" onClick={handleBtnClick}>
-              <div className="BtnBox-a">
-                <Board width="25px" height="25px" />
-                <div className="BtnBox-des">이용안내</div>
-              </div>
+            <div className="BtnBox-des">사업소개</div>
+          </div>
+          <div className="BtnBox" onClick={handleBtnClick}>
+            <div className="BtnBox-icon">
+              <Board width="20px" height="20px" />
             </div>
-            <div className="BtnBox" onClick={handleBtnClick}>
-              <div className="BtnBox-a">
-                <Card width="25px" height="25px" />
-                <div className="BtnBox-des">K-패스 카드</div>
-              </div>
+            <div className="BtnBox-des">이용안내</div>
+          </div>
+          <div className="BtnBox" onClick={handleBtnClick}>
+            <div className="BtnBox-icon">
+              <Card width="20px" height="20px" />
             </div>
-            <div className="BtnBox" onClick={handleBtnClick}>
-              <div className="BtnBox-a">
-                <Bell width="25px" height="25px" />
-                <div className="BtnBox-des">공지사항</div>
-              </div>
+            <div className="BtnBox-des">K-패스 카드</div>
+          </div>
+          <div className="BtnBox" onClick={handleBtnClick}>
+            <div className="BtnBox-icon">
+              <Bell width="23px" height="28px" />
             </div>
-            <div className="BtnBox" onClick={handleBtnClick}>
-              <div className="BtnBox-a">
-                <Question width="25px" height="25px" />
-                <div className="BtnBox-des">문의하기</div>
-              </div>
+            <div className="BtnBox-des">공지사항</div>
+          </div>
+          <div className="BtnBox" onClick={handleBtnClick}>
+            <div className="BtnBox-icon">
+              <Question width="20px" height="25px" />
             </div>
+            <div className="BtnBox-des">문의하기</div>
           </div>
         </div>
         <div className="Navbar-03">

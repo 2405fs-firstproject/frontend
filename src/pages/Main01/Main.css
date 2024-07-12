@@ -1,6 +1,6 @@
 #main01 {
   top: 2.8571428571em;
-  position: relative;
+  /*position: relative;*/
   display: flex;
   justify-content: center;
   padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
@@ -77,9 +77,9 @@
 }
 
 /* 수정 부분 */
-.login-signup { 
+.login-signup {
   cursor: pointer;
-} 
+}
 
 .login_naver,
 .login_kakao {
@@ -154,14 +154,11 @@
     margin-bottom: 50px;
 
     padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
-    padding-right: max(
-      min(4.4444444444vw, 2.5em),
-      calc((100vw - (1200px)) / 2)
-    );
+    padding-right: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
   }
 
   .slide__img {
-    position: relative;
+    /*position: relative;*/
     width: 750px;
     height: 550px;
     overflow: hidden;
@@ -175,13 +172,13 @@
   }
 
   .slide {
-    position: relative;
+    /*position: relative;*/
     width: 750px;
     height: 550px;
   }
 
   .slide__btn a {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
