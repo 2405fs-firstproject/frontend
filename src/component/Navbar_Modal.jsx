@@ -10,7 +10,7 @@ export const Navbar_Modal = () => {
         <div className="ListLine_Index">
           <div className="ListLine">
             <div className="MainIndex">
-              <Link to="/KpassIntro">K-패스소개</Link>
+              <Link to="/Info">K-패스소개</Link>
             </div>
             <div className="MainIndex">
               <Link to="/">지역별혜택소개</Link>
@@ -38,7 +38,7 @@ export const Navbar_Modal = () => {
               <Link to="/">카드소개</Link>
             </div>
             <div className="MainIndex">
-              <Link to="/">사용안내</Link>
+              <Link to="/k-pass-card">사용안내</Link>
             </div>
             <div className="SubIndex">
               <Link to="/">• 카드사별 지급방식</Link>
@@ -58,16 +58,16 @@ export const Navbar_Modal = () => {
           </div>
           <div className="ListLine">
             <div className="MainIndex">
-              <Link to="/">공지사항</Link>
+              <Link to="/notice">공지사항</Link>
             </div>
           </div>
           <div className="ListLine">
             <div className="MainIndex">
-              <Link to="/">문의하기</Link>
+              <Link to="/ContactForm">문의하기</Link>
             </div>
 
             <div className="MainIndex">
-              <Link to="/">1:1문의</Link>
+              <Link to="/Counsel">1:1문의</Link>
             </div>
 
             <div className="MainIndex">

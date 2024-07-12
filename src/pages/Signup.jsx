@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/Login.css";
+import "../pages/Signup.css";
 
-export const Login = () => {
+export const Signup = () => {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const [idValid, setIdValid] = useState(false);
   const [passwordValid, setPasswordValid] = useState(false);
+  const [confirmPasswordValid, setConfirmPasswordValid] = useState(false);
 
   const handleId = (e) => {
     setId(e.target.value);
@@ -32,30 +34,39 @@ export const Login = () => {
     }
   };
 
+  const handleConfirmPassword = (e) => {
+    setConfirmPassword(e.target.value);
+    if (e.target.value === password) {
+      setConfirmPasswordValid(true);
+    } else {
+      setConfirmPasswordValid(false);
+    }
+  };
+
   const onClickConfirmButton = () => {
-    if (idValid && passwordValid) {
-      alert("로그인에 성공했습니다.");
+    if (idValid && passwordValid && confirmPasswordValid) {
+      alert("회원가입에 성공했습니다.");
     } else {
       alert("아이디 또는 비밀번호가 유효하지 않습니다.");
     }
   };
 
-  const handleLogin = () => {
-    navigate("/signup");
+  const handleSignup = () => {
+    navigate("/login");
   };
 
   return (
     <div className="headerWrap">
-      <div className="headerSmallLogin">
+      <div className="headerSmallSignup">
         <img
           src="https://korea-pass.kr/assets/images/ico/home.svg?ver=240220"
           alt="홈 아이콘"
-          style={{ marginRight: "8px", width: "16px", height: "16px" }}
+          style={{ marginRight: "8px", width: "16px", height: "16px" }} 
         />
-        로그인
+        회원가입
       </div>
-      <div className="headerLogin">로그인</div>
-      <div className="loginPage">
+      <div className="headerSignup">회원가입</div>
+      <div className="signupPage">
         <div className="titleWrap">
           <div className="textContainer">
             혜택이 두루두루
@@ -73,9 +84,19 @@ export const Login = () => {
         <div className="contentWrap">
           <div className="inputTitle">아이디</div>
           <div className="inputWrapper">
-            <input type="text" className="input" placeholder="아이디를 입력해주세요." value={id} onChange={handleId} />
+            <input
+              type="text"
+              className="input"
+              placeholder="아이디를 입력해주세요."
+              value={id}
+              onChange={handleId}
+            />
           </div>
-          <div className="errorMessageWrap">{!idValid && id.length > 0 && <div>아이디를 입력해주세요.</div>}</div>
+          <div className="errorMessageWrap">
+            {!idValid && id.length > 0 && (
+              <div>아이디는 5~10자의 영소문자, 숫자만 입력 가능합니다.</div>
+            )}
+          </div>
 
           <div style={{ marginTop: "26px" }} className="inputTitle">
             비밀번호
@@ -90,12 +111,33 @@ export const Login = () => {
             />
           </div>
           <div className="errorMessageWrap">
-            {!passwordValid && password.length > 0 && <div>비밀번호를 입력해주세요.</div>}
+            {!passwordValid && password.length > 0 && (
+              <div>비밀번호는 8~16자의 영소문자, 숫자, !@*&-_만 입력</div>
+            )}
+          </div>
+
+          <div style={{ marginTop: "26px" }} className="inputTitle">
+            비밀번호 확인
+          </div>
+          <div className="inputWrapper">
+            <input
+              type="password"
+              className="input"
+              placeholder="비밀번호를 다시 입력해주세요."
+              value={confirmPassword}
+              onChange={handleConfirmPassword}
+            />
+          </div>
+          <div className="errorMessageWrap">
+            {!confirmPasswordValid && confirmPassword.length > 0 && (
+              <div>비밀번호가 일치하지 않습니다.</div>
+            )}
           </div>
         </div>
+
         <div>
           <button onClick={onClickConfirmButton} className="bottomButton">
-            로그인
+            회원가입
           </button>
         </div>
         <div className="findWrap">
@@ -104,8 +146,8 @@ export const Login = () => {
             <span>&nbsp;|&nbsp;</span>
             <div>비밀번호 찾기</div>
           </div>
-          <div className="signup" onClick={handleLogin}>
-            회원가입
+          <div className="signup" onClick={handleSignup}>
+            로그인
           </div>
         </div>
       </div>

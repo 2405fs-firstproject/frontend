@@ -8,6 +8,7 @@
   align-items: center;
   border-bottom: 1px solid #edeff4;
   background-color: white;
+  z-index: 1010;
 }
 
 .ListLine_Index {
@@ -22,7 +23,6 @@
   height: 356px;
   margin: auto;
   padding-left: 17px;
-  z-index: 1010;
 }
 
 .ListLine_Index a {
