@@ -11,9 +11,9 @@ import { JoinUs } from "./pages/JoinUs";
 import ContactForm from "./pages/contact/ContactForm";
 import ContactMain from "./pages/contact/ContactMain";
 import CounselForm from "./pages/contact/CounselForm";
+import NoticeForm from "./pages/Notice/NoticeForm";
 import Info from "./pages/Info/Info";
 import "./App.css";
-import Home2_1 from "./pages/main2/Home2_1";
 import Card_sub from "./pages/main2/Card_sub";
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
               <Route path="/contactform" element={<ContactForm />} />
               <Route path="/contactmain" element={<ContactMain />} />
               <Route path="/counsel" element={<CounselForm />} />
+              <Route path="/notice" element={<NoticeForm />} />
               <Route path="/login" element={<Login />} />
               <Route path="/joinus" element={<JoinUs />} />
               <Route path="/info" element={<Info />} />
