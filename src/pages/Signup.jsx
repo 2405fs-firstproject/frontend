@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../pages/Signup.css";
 
 export const Signup = () => {
   const navigate = useNavigate();
@@ -60,7 +61,7 @@ export const Signup = () => {
         <img
           src="https://korea-pass.kr/assets/images/ico/home.svg?ver=240220"
           alt="홈 아이콘"
-          style={{ marginRight: "8px", width: "16px", height: "16px" }} // 스타일 추가
+          style={{ marginRight: "8px", width: "16px", height: "16px" }} 
         />
         회원가입
       </div>
@@ -82,7 +83,7 @@ export const Signup = () => {
         </div>
         <div className="contentWrap">
           <div className="inputTitle">아이디</div>
-          <div className="inputWrap">
+          <div className="inputWrapper">
             <input
               type="text"
               className="input"
@@ -100,7 +101,7 @@ export const Signup = () => {
           <div style={{ marginTop: "26px" }} className="inputTitle">
             비밀번호
           </div>
-          <div className="inputWrap">
+          <div className="inputWrapper">
             <input
               type="password"
               className="input"
@@ -118,7 +119,7 @@ export const Signup = () => {
           <div style={{ marginTop: "26px" }} className="inputTitle">
             비밀번호 확인
           </div>
-          <div className="inputWrap">
+          <div className="inputWrapper">
             <input
               type="password"
               className="input"

@@ -66,26 +66,17 @@
   color: black;
 }
 
-.inputWrap {
+.input {
   display: flex;
   border-radius: 8px;
   padding: 5px;
-  margin-top: 8px;
+  margin-top: 10px;
   background-color: white;
   border: 1px solid #dcdcdc;
 }
 
-.inputWrap:focus-within {
+.input:focus-within {
   border: 1px solid #a5bee7
-}
-
-.input {
-  width: 100%;
-  outline: none;
-  border: none;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .input::placeholder {
@@ -128,3 +119,4 @@
   display: flex;
   cursor: pointer;
 }
+

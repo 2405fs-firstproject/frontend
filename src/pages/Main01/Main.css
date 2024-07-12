@@ -1,0 +1,246 @@
+#main01 {
+  top: 2.8571428571em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
+  padding-right: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
+  margin-bottom: 50px;
+}
+
+.login_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-title-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.user_id,
+.user_pwd {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.user_id {
+  margin-top: 8px;
+}
+
+#user_id {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.user_pwd {
+  margin-top: 18px;
+}
+
+#user_pwd {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.btnLogin {
+  background-color: #fc5b00;
+  color: white;
+  border-color: #fc5b00;
+  width: 322px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.login-util {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-id,
+.bar,
+.find-pwd,
+.login-signup {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.find-id,
+.bar,
+.find-pwd {
+  margin-right: 7px;
+}
+
+/* 수정 부분 */
+.login-signup { 
+  cursor: pointer;
+} 
+
+.login_naver,
+.login_kakao {
+  width: 55px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.login-others {
+  display: flex;
+  justify-content: center;
+}
+
+.login_naver {
+  margin-right: 25px;
+}
+
+.login-box {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 30px;
+  margin-left: 25px;
+  width: 315px;
+  height: 500px;
+}
+
+#main02 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
+  padding-right: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
+  margin-bottom: 70px;
+}
+
+.text1_1,
+.text1_2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.kpass_img_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.kpass_img {
+  width: 200px;
+  height: auto;
+}
+
+.text2_1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #928f8d;
+}
+
+.text2_2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #928f8d;
+  .img {
+    width: 750px;
+    height: 550px;
+  }
+
+  .slide__wrap {
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    padding-left: max(min(4.4444444444vw, 2.5em), calc((100vw - (1200px)) / 2));
+    padding-right: max(
+      min(4.4444444444vw, 2.5em),
+      calc((100vw - (1200px)) / 2)
+    );
+  }
+
+  .slide__img {
+    position: relative;
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+  }
+
+  .slide__inner {
+    display: flex;
+    width: 3000px;
+    height: 550px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide {
+    position: relative;
+    width: 750px;
+    height: 550px;
+  }
+
+  .slide__btn a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .slide__btn a.prev {
+    position: absolute;
+    left: 1%;
+  }
+
+  .slide__btn a.next {
+    position: absolute;
+    right: 1%;
+  }
+
+  .slide__dot {
+    position: absolute;
+    left: 49%;
+    bottom: 2%;
+    transform: translateX(-50%);
+  }
+
+  .slide__dot .dot {
+    width: 11px;
+    height: 11px;
+    background-color: rgba(141, 137, 136, 0.3);
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: all 0.3s;
+    margin: 2px;
+  }
+
+  .slide__dot .dot.active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  margin-bottom: 30px;
+}
+
+.info_report {
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  width: 80px;
+  padding: 6px 12px 6px 12px;
+  border-radius: 35px;
+  border: 1px solid #bababa;
+  background-color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.info_arrow {
+  width: 10px;
+  height: 10px;
+  padding-left: 3px;
+}

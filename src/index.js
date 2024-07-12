@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './pages/Login.css';
 import './pages/Signup.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
