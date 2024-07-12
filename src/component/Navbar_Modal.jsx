@@ -40,7 +40,6 @@ export const Navbar_Modal = () => {
             <div className="MainIndex">
               <Link to="/">사용안내</Link>
             </div>
-
             <div className="SubIndex">
               <Link to="/">• 카드사별 지급방식</Link>
             </div>

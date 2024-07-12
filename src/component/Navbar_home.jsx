@@ -6,7 +6,6 @@ import { ReactComponent as Card } from "../assets/Card.svg";
 import { ReactComponent as Bell } from "../assets/Bell.svg";
 import { ReactComponent as Question } from "../assets/Question.svg";
 import { Navbar_Modal } from "../component/Navbar_Modal";
-import { Popup } from "../component/Popup";
 
 import { Link } from "react-router-dom";
 import "./Navbar_home.css";
@@ -80,7 +79,6 @@ export const Navbar_home = () => {
           </div>
         </div>
       </div>
-      <Popup />
       {showModal && <Navbar_Modal showModal={showModal} setShowModal={setShowModal} />}
     </div>
   );
