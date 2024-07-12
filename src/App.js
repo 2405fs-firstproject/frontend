@@ -1,17 +1,34 @@
-import { HomeView } from "./pages/HomeView";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import { Header } from "./section/Header";
+import { Home } from "./section/Home";
+import { Footer } from "./section/Footer";
+import { Email } from "./pages/Policy/Email";
+import { Private } from "./pages/Policy/Private";
+import { Service } from "./pages/Policy/Service";
+import { Login } from "./pages/Login";
+import { Signup } from "./pages/Signup";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<HomeView />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <BrowserRouter>
+        <div className="Wrapper">
+          <Header />
+          <div className="contentWrapper">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/email" element={<Email />} />
+              <Route path="/private" element={<Private />} />
+              <Route path="/service" element={<Service />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 

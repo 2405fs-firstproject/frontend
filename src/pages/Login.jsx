@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+export const Login = () => {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +31,6 @@ const Login = () => {
     }
   };
 
-  
   const onClickConfirmButton = () => {
     if (idValid && passwordValid) {
       alert("로그인에 성공했습니다.");
@@ -46,14 +45,29 @@ const Login = () => {
 
   return (
     <div className="headerWrap">
+      <div className="headerSmallLogin">
+        <img
+          src="https://korea-pass.kr/assets/images/ico/home.svg?ver=240220"
+          alt="홈 아이콘"
+          style={{ marginRight: "8px", width: "16px", height: "16px" }} // 스타일 추가
+        />
+        로그인
+      </div>
       <div className="headerLogin">로그인</div>
       <div className="loginPage">
         <div className="titleWrap">
-          혜택이 두루두루
-          <br />
-          행복이 차곡차곡
-          <br />
-          K-패스
+          <div className="textContainer">
+            혜택이 두루두루
+            <br />
+            행복이 차곡차곡
+            <br />
+            K-패스
+          </div>
+          <img
+            src="https://korea-pass.kr/assets/images/main/main_01_02.svg"
+            alt="K-패스 이미지"
+            className="titleImage"
+          />
         </div>
         <div className="contentWrap">
           <div className="inputTitle">아이디</div>
@@ -107,5 +121,3 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;
