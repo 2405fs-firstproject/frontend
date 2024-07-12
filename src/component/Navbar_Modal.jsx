@@ -11,7 +11,7 @@ export const Navbar_Modal = () => {
           <div className="ListLine_group">
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/KpassIntro">K-패스소개</Link>
+                <Link to="/Info">K-패스소개</Link>
               </div>
             </div>
             <div className="ListLine_group_menu">
@@ -83,7 +83,7 @@ export const Navbar_Modal = () => {
           <div className="ListLine_group">
             <div className="ListLine_group_menu">
               <div className="MainIndex">
-                <Link to="/">공지사항</Link>
+                <Link to="/notice">공지사항</Link>
               </div>
             </div>
           </div>
