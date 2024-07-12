@@ -1,10 +1,17 @@
 import React from "react";
 import SlideShow from "../pages/Main01/SlideShow";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../pages/Main01/Main.css";
 import Home2_1 from "../pages/main2/Home2_1";
 
-function Home() {
+export const Home = () => {
+  // 수정 부분
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/signup");
+  };
+
   return (
     <main>
       <div id="main01">
@@ -61,17 +68,17 @@ function Home() {
                   <span className="bar">|</span>
                   <span className="find-pwd">비밀번호 찾기</span>
                 </div>
-                <div className="login-signup">회원가입</div>
+                <div className="login-signup" onClick={handleLogin}>회원가입</div>
               </div>
               <div className="login-others">
-                <a href="#" id="naver_id_login_hidden">
+                <a href="{()=>false}" id="naver_id_login_hidden">
                   <img
                     className="login_naver"
                     src="https://korea-pass.kr/assets/images/ico/naver.svg?ver=240220"
                     alt=""
                   />
                 </a>
-                <a href="#" id="kakao_id_login_hidden">
+                <a href="{()=>false}" id="kakao_id_login_hidden">
                   <img
                     className="login_kakao"
                     src="https://korea-pass.kr/assets/images/ico/kakao.svg?ver=240220"
@@ -113,4 +120,3 @@ function Home() {
   );
 }
 
-export default Home;

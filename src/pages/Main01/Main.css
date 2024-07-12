@@ -76,6 +76,11 @@
   margin-right: 7px;
 }
 
+/* 수정 부분 */
+.login-signup { 
+  cursor: pointer;
+} 
+
 .login_naver,
 .login_kakao {
   width: 55px;
