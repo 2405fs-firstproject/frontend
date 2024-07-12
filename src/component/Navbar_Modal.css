@@ -1,5 +1,5 @@
 .Modal {
-  position: fixed;
+  position: absolute;
 }
 .ListLine_container {
   width: 100vw;
@@ -8,7 +8,7 @@
   align-items: center;
   border-bottom: 1px solid #edeff4;
   background-color: white;
-  z-index: 1010;
+  z-index: 2;
 }
 
 .ListLine_Index {
@@ -43,9 +43,10 @@ a:active {
   border-right: 1px solid #edeff4;
 
   position: relative;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
-    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 .ListLine:first-child {
   border-left: 1px solid #edeff4;
